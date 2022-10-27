@@ -8,7 +8,8 @@
 let evenOrOdd = prompt('pari o dispari?')
 console.log(evenOrOdd)
 
-
+let userNumber =  parseInt(prompt('inserisci un numero tra 1 a 5'))
+    console.log(userNumber)
 
 function randomNumber(){
     let randomNumber = Math.round(Math.random() * 4) + 1;
@@ -17,12 +18,31 @@ function randomNumber(){
 console.log(randomNumber())
 
 function game(){
-    let userNumber =  parseInt(prompt('inserisci un numero tra 1 a 5'))
-    console.log(userNumber)
+
     if (userNumber <= 5 && userNumber > 0 ){
-        console.log('ok')
+
+        result = userNumber + randomNumber()
+        return result
     } else {
         alert('inserisci un numero tra 1 e 5')
     }
 } 
+
 console.log(game())
+
+if (evenOrOdd == 'pari') {
+
+    if (game() % 2 == 0) {
+        alert('hai vinto')
+    } else {
+        alert('hai perso')
+    }
+
+} else {
+
+    if (game() % 2 != 0) {
+        alert('hai vinto')
+    } else {
+        alert('hai perso')
+    }
+}
