@@ -3,9 +3,11 @@
 
 let word = prompt('inserisci una parola')
 
-let wordReverse = ''
+
 
 function palindroma(){
+
+let wordReverse = ''
 
 for (let i = word.length-1; i >= 0; i--){
 
@@ -18,8 +20,10 @@ return wordReverse;
 
 console.log(`${word} ---> ${palindroma()}`)
 
+let wordReverse = palindroma();
+
 if (word == wordReverse){
     console.log(`${word} è una parola palindroma`)
 }   else {
-    confirm.log(`${word} non è una parola palindroma`)
+    console.log(`${word} non è una parola palindroma`)
 }
