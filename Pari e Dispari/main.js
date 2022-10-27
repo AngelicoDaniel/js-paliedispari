@@ -5,7 +5,7 @@
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
 
-let evenOrOdd = prompt('pari o dispari?')
+let evenOrOdd = prompt('pari o dispari?').toLowerCase
 console.log(evenOrOdd)
 
 let userNumber =  parseInt(prompt('inserisci un numero tra 1 a 5'))
@@ -20,7 +20,6 @@ console.log(randomNumber())
 function game(){
 
     if (userNumber <= 5 && userNumber > 0 ){
-
         result = userNumber + randomNumber()
         return result
     } else {
