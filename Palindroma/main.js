@@ -11,7 +11,7 @@ let wordReverse = ''
 
 for (let i = word.length-1; i >= 0; i--){
 
-    wordReverse = wordReverse += word[i]
+    wordReverse += word[i]
     //console.log(word[i])
 
 }
