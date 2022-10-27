@@ -11,20 +11,24 @@ console.log(evenOrOdd)
 let userNumber =  parseInt(prompt('inserisci un numero tra 1 a 5'))
     console.log(userNumber)
 
-function randomNumber(){
-    let randomNumber = Math.round(Math.random() * 4) + 1;
-    return randomNumber;
-}
-console.log(randomNumber())
+// function randomNumber(){
+//     let randomNumber = Math.round(Math.random() * 4) + 1;
+    
+//     return randomNumber;
+// }
+// console.log(randomNumber())
 
 function game(){
 
+    let randomNumber = Math.round(Math.random() * 4) + 1;
+        console.log(randomNumber)
+        
     if (userNumber <= 5 && userNumber > 0 ){
-        result = userNumber + randomNumber()
+    result = userNumber + randomNumber
         return result
     } else {
-        alert('inserisci un numero tra 1 e 5')
-    }
+    alert('inserisci un numero tra 1 e 5')
+}
 } 
 
 console.log(game())
