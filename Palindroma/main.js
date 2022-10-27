@@ -17,3 +17,9 @@ return wordReverse;
 }
 
 console.log(`${word} ---> ${palindroma()}`)
+
+if (word == wordReverse){
+    console.log(`${word} è una parola palindroma`)
+}   else {
+    confirm.log(`${word} non è una parola palindroma`)
+}
