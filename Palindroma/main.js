@@ -3,19 +3,15 @@
 
 let word = prompt('inserisci una parola')
 
-
-
 function palindroma(){
 
-let wordReverse = ''
+    let wordReverse = ''
 
-for (let i = word.length-1; i >= 0; i--){
-
+    for (let i = word.length-1; i >= 0; i--){
     wordReverse += word[i]
     //console.log(word[i])
-
-}
-return wordReverse;
+    }
+    return wordReverse;
 }
 
 console.log(`${word} ---> ${palindroma()}`)
