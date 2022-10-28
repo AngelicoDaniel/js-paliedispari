@@ -36,7 +36,7 @@ function controlloPariDispari(){
     }
 }
 
-if (userNumber == controlloPariDispari()){
+if (evenOrOdd == controlloPariDispari()){
     console.log(`user won`)
 }   else {
     console.log(`cpu won`)
