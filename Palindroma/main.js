@@ -4,9 +4,8 @@
 let userName = "";
 userName = prompt("inserisci una parola");
 let reverseWord = reverseFunction(userName);
-function reverseFunction(reverse){
-let reverseWord = reverse.split('').reverse().join('');
-return  reverseWord;
+function reverseFunction(wordToReverse){
+    return wordToReverse.split('').reverse().join('');
 }
 if (userName == reverseWord){
     console.log("la parola è palindroma" );
