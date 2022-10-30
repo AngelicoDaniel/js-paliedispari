@@ -29,11 +29,8 @@ console.log (`il valore della somma è: ${valoreSommaFunzione}`)
 
 function controlloPariDispari(){
     let controllo = ''
-    if (userNumber > 5){
-    alert('inserisci un numero tra 1 e 5');
-    script.stop
-}
-    else if( valoreSommaFunzione % 2 == 0){
+    
+    if( valoreSommaFunzione % 2 == 0){
         controllo = 'pari'
         return controllo
     }  else {
@@ -41,11 +38,14 @@ function controlloPariDispari(){
         return controllo
     }
 }
-
-if (evenOrOdd == controlloPariDispari()){
-    alert(`user won`)
-}   else {
-    alert(`cpu won`)
+if (userNumber > 5){
+    alert('inserisci un numero tra 1 e 5');
+} else {
+    if (evenOrOdd == controlloPariDispari()){
+        alert(`user won`)
+    }   else {
+        alert(`cpu won`)
+    }
 }
 // function game(){
 
