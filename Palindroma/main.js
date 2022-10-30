@@ -8,7 +8,7 @@ function reverseFunction(wordToReverse){
     return wordToReverse.split('').reverse().join('');
 }
 if (userName == reverseWord){
-    console.log("la parola è palindroma" );
+    alert("la parola è palindroma" );
 }else{
-    console.log('la parola non è palindroma')
+    alert('la parola non è palindroma')
 }
